@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고려 & 조선 역사 퀴즈 챌린지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>📜 고려 & 조선 역사 퀴즈</h1>
+            <p>수업 시간에 배운 내용을 얼마나 잘 기억하고 있는지 확인해볼까요?</p>
+        </header>
+
+        <div id="quiz-box">
+            <div id="progress-container">
+                <span id="question-number">문제 1 / 5</span>
+            </div>
+            <div id="question-text">문제가 여기에 나타납니다.</div>
+            <div id="options-container" class="options-grid">
+                <!-- 보기 버튼들이 자바스크립트로 동적 생성됩니다 -->
+            </div>
+            <button id="next-btn" class="hidden">다음 문제로 ➡️</button>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <h2>🎉 퀴즈 완료!</h2>
+            <p id="score-text"></p>
+            <button id="restart-btn" onclick="location.reload()">다시 풀기 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
